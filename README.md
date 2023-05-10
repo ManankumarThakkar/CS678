@@ -21,5 +21,17 @@ Most likely, the model/paper you reproduced has only been tested on one language
 ## Multilingual Checklist
 The Multilingual Checklist can be used to perform behavioral testing on multiple languages. The checklist includes various tests that can be performed to evaluate the performance of a model on different languages. The tests are designed to evaluate the model's sensitivity to data perturbation, language transferability, and cross-lingual performance.
 
+# Robustness
+
+In the previous checkpoint, we discussed sensitivity analysis with regards to hyperparameters and other modeling choices. Now, let's turn our attention to sensitivity/robustness to data perturbation.
+
+Real-world data can be noisy and error-prone, with spelling errors, typos, grammar mistakes, ambiguity, and other issues. If you deploy your model in a real-world setting, it needs to be able to handle these challenges.
+
+One way to evaluate the robustness of your model is to use a testing methodology like CheckList, which is designed to measure behavioral patterns in NLP models. CheckList provides a set of test cases that evaluate the model's performance in various scenarios, such as handling negation, synonyms, and antonyms, detecting contradictions, and handling noisy input.
+
+In addition to using a testing methodology, you can also explore the robustness of your model by generating adversarial examples, which are modified versions of input data that are designed to cause the model to make mistakes. By analyzing the model's performance on these examples, you can identify weaknesses and areas for improvement.
+
+Overall, ensuring that your model is robust to data perturbations is an important step towards creating a reliable and trustworthy NLP application. 
+
 ## Conclusion
 In this project, we have demonstrated how to reproduce experiments presented in a research paper and how to extend the experiments to multiple languages. By following the steps outlined in this README, you can reproduce the experiments presented in the original paper and test the performance of the model on languages beyond those included in the paper.
